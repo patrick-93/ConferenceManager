@@ -1,0 +1,11 @@
+Proper Unit Tests for Anyone 60min
+Why Python? 45min
+TDD for Embedded Systems 30min
+Dependency Management 45min
+Java 8, really end of life 45min
+From Java 8 to Java 12 lightning
+Managing Network Latency 60min
+BDD Gone Mad 45min
+Spring JuJu 60min
+Effective DSL 60min
+CD on the Mainframe 60min
