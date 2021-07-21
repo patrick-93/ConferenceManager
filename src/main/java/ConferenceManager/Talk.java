@@ -1,12 +1,13 @@
 package ConferenceManager;
 
 import java.time.LocalTime;
+import java.util.Calendar;
 
 public class Talk {
     private int length;
     private String name;
-    private LocalTime begin;
-    private LocalTime end;
+    private Calendar begin;
+    private Calendar end;
 
     public Talk (int length, String name) {
         this.length = length;
@@ -17,7 +18,7 @@ public class Talk {
 
     @Override
     public String toString() {
-        return "Talk [length=" + length + ", name=" + name + ", begin=" + begin + ", end=" + end + "]";
+        return "Talk [name=" + name + ", length=" + length + ", begin=" + begin + ", end=" + end + "]";
     }
 
     public int getLength() {
@@ -36,19 +37,19 @@ public class Talk {
         this.name = name;
     }
 
-    public LocalTime getBegin() {
+    public Calendar getBegin() {
         return begin;
     }
 
-    public void setBegin(LocalTime begin) {
+    public void setBegin(Calendar begin) {
         this.begin = begin;
     }
 
-    public LocalTime getEnd() {
+    public Calendar getEnd() {
         return end;
     }
 
-    public void setEnd(LocalTime end) {
+    public void setEnd(Calendar end) {
         this.end = end;
     }
 }
