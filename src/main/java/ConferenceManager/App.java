@@ -1,17 +1,16 @@
 package ConferenceManager;
 
-import java.io.File;
-import java.time.LocalTime;
 import java.util.ArrayList;
-import java.util.Scanner;
 
 public class App {
-    public static void main(String[] args) throws Exception {
+    public static void main(String[] args) {
         // Make sure a file is passed as an argument
         if (args.length == 0) {
             System.out.println("Usage: java -jar ConferenceManager.jar </path/to/file>");
             System.exit(1);
         }
+
+        // Create a new FileParser and get a list from the args
         FileParser fp = new FileParser();
         ArrayList<Talk> allTalks = fp.generateList(args[0]);
 

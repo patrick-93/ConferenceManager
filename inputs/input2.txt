@@ -1,5 +1,5 @@
 Proper Unit Tests for Anyone 60min
-Why Python? 45min
+Why Python? 45minun
 TDD for Embedded Systems 30min
 Dependency Management 45min
 Java 8, really end of life 45min
@@ -9,4 +9,3 @@ BDD Gone Mad 45min
 Spring JuJu 60min
 Effective DSL 60min
 CD on the Mainframe 60min
-Testing before building 30min

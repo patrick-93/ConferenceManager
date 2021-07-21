@@ -40,11 +40,16 @@ public class FileParser {
         // Check the last string in the array, should contain
         // either "min" or "lightning" if valid
         String lastString = tempArr[tempArr.length - 1];
-        int length = 0;
+        int length;
         if (lastString.equals("lightning")) {
             length = 5;
         } else if (lastString.contains("min")){
-            length = Integer.parseInt(lastString.replace("min", ""));
+            try {
+                length = Integer.parseInt(lastString.replace("min", ""));
+            } catch (NumberFormatException e) {
+                System.out.println("Error parsing line: " + s);
+                return null;
+            }
         } else {
             System.out.println("Error parsing line: " + s);
             return null;
