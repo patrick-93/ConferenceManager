@@ -108,5 +108,17 @@ public class Scheduler {
             }
             loopCount++;
         }
+        
+        // Create a new Talk called networkingEvent
+        // Check if it's before 4 PM and set it's begin time
+        // Add it to the afternoonTalks list
+        Talk networkingEvent = new Talk(60, "Networking Event");
+        LocalTime nEvent = LocalTime.of(4, 0);
+        if (current.compareTo(nEvent) < 1) {
+            networkingEvent.setBegin(nEvent);
+        } else {
+            networkingEvent.setBegin(current);
+        }
+        afternoonTalks.add(networkingEvent);
     }
 }
