@@ -108,7 +108,7 @@ public class Scheduler {
             }
             loopCount++;
         }
-        
+
         // Create a new Talk called networkingEvent
         // Check if it's before 4 PM and set it's begin time
         // Add it to the afternoonTalks list

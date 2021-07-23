@@ -8,8 +8,8 @@ Managing Network Latency 60min
 BDD Gone Mad 45min
 Spring JuJu 60min
 Effective DSL 60min
-CD on the Mainframe 60min
-Testing before building 30min
+CD on the Mainframe -1min
+Testing before building 30h
 BDD Gone Mad 45min
 Do you smell that?  (Code Smells) 30min
 Open Office Space or Closets???? 30min

@@ -44,6 +44,7 @@ public class FileParser {
         if (lastString.equals("lightning")) {
             length = 5;
         } else if (lastString.contains("min")){
+            // Try to catch if extra text is in the lastString, fail out if found
             try {
                 length = Integer.parseInt(lastString.replace("min", ""));
             } catch (NumberFormatException e) {
@@ -52,6 +53,11 @@ public class FileParser {
             }
         } else {
             System.out.println("Error parsing line: " + s);
+            return null;
+        }
+        // Check if length is negative
+        if (length < 5) {
+            System.out.println("Error parsing line, length was less than the minimum: " + s);
             return null;
         }
         temp.setLength(length);
