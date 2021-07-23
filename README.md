@@ -6,6 +6,11 @@ and sorts the different talks people want to give at a conference.
 * Internet (to download Gradle if not already installed)
 * OpenJDK 11 (or compatible substitute)
 
+## Assumptions
+* The input file must be supplied as a single CLI arg
+* Each line in the input must end in either "lightning" or a minute value like "60min" or "15min",
+all lines that do not end in one of those values will be ignored
+
 ## Usage
 ```shell
 git clone https://github.com/patrick-93/ConferenceManager.git
